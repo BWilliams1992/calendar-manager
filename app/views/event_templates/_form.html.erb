@@ -1,17 +1,23 @@
-<%= form_with(model: event_template, local: true) do |form| %>
-  <% if event_template.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(event_template.errors.count, "error") %> prohibited this event_template from being saved:</h2>
-
-      <ul>
-        <% event_template.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
+<%= form_with(model: event_template, local: true) do |f| %>
+    <div>
+      <%= f.label :summary %>
+      <%= f.text_field :summary %>
     </div>
-  <% end %>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+    <div>
+      <%= f.label :length %>
+      <%= f.text_field :length %>
+    </div>
+    <div>
+      <%= f.label :location %>
+      <%= f.text_field :location %>
+    </div>
+    <div>
+      <%= f.label :color %>
+      <%= f.text_field :color %>
+    </div>
+    <div>
+      <%= f.label :avaliability %>
+      <%= f.text_field :avaliability %>
+    </div>
+    <%= f.submit %>
 <% end %>
