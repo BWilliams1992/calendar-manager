@@ -1,12 +1,10 @@
 FactoryBot.define do 
   factory :event_template do
-    start_date {}
-    start_time {}
-    end_date {}
-    end_time {}
+    length {}
     summary {}
     location {}
     notification {}
+    avaliablility {}
     color {}
   end
 end
