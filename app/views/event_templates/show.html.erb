@@ -1,4 +1,12 @@
 <p id="notice"><%= notice %></p>
 
+<div>
+  <h3><%= @event_template.summary %></h3>
+  <h4>Length: <%=@event_template.length%> Hours </h4>
+  <h4>Location: <%=@event_template.location%> </h4>
+  <h4>Color: <%=@event_template.color%> </h4>
+  <h4>Avaliability: <%=@event_template.avaliability%> </h4>
+</div>
+
 <%= link_to 'Edit', edit_event_template_path(@event_template) %> |
 <%= link_to 'Back', event_templates_path %>

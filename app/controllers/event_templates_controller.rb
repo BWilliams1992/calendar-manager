@@ -64,6 +64,6 @@ class EventTemplatesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def event_template_params
-      params.require(:event_template).permit(:summary, :length, :location, :color, :avaliablility)
+      params.require(:event_template).permit(:summary, :length, :location, :color, :avaliability)
     end
 end
